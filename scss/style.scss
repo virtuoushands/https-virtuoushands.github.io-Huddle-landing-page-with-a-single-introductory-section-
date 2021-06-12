@@ -1,0 +1,106 @@
+$body-font: 'Open Sans', sans-serif;;
+$heading-font: 'Poppins', sans-serif;
+$primary-color1: hsl(257, 40%, 49%);
+$primary-color2: hsl(300, 69%, 71%);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: $body-font;
+    line-height: 1.5;
+    color: #fff;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6{
+    font-family: $heading-font;
+}
+
+img{
+    width: 100%;
+}
+
+.maincase{
+    background: top center no-repeat url(../images/bg-mobile.svg), $primary-color1;
+    padding: 32px 35px 40px;
+}
+
+.logo-wrap{
+    margin-bottom: 50px;
+
+    img{
+        max-width: 125px;
+    }
+}
+
+.cont-left{
+    margin-bottom: 56px;
+}
+
+.cont-right{
+    text-align: center;
+
+    h1{
+        font-size: 1.5rem;
+        margin-bottom: 13px;
+    }
+}
+
+.register-btn{
+    text-align: center;
+    display: block;
+    font-size: 13px;
+    background: #fff;
+    margin-top: 24px;
+    text-decoration: none;
+    padding: 11px;
+    max-width: 200px;
+    margin: 24px auto auto;
+    border-radius: 30px;
+    color: $primary-color1;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .65);
+}
+
+.register-btn:hover{
+    background-color: $primary-color2;
+    color: #fff;
+}
+
+.social-icons{
+    margin-top: 55px;
+
+    ul{
+        display: flex;
+        justify-content: center;
+        gap: 7px;
+    }
+
+    li{
+        list-style-type: none;
+
+        span{
+            width: 30px;
+            height: 30px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            color: #fff;
+            text-align: center;
+            padding-top: 6px;
+        }
+        
+        a:hover span{
+            color: $primary-color2;
+            border-color: $primary-color2;
+        }
+    }
+}
+
+@import 'responsive';

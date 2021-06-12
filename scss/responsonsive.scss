@@ -1,0 +1,67 @@
+@media all and (min-width:986px) {
+    .maincase{
+        background: top center  no-repeat url(../images/bg-desktop.svg), $primary-color1;
+        padding: 55px 35px 40px;
+    }
+
+    .container{
+        max-width: 1280px;
+        margin: auto;
+    }
+
+    .logo-wrap{
+        margin-bottom: 85px;
+
+        img{
+            max-width: 205px;
+        }
+    }
+
+    .content-case{
+        display: grid;
+        grid-template-columns: 55% 45%;
+    }
+
+    .cont-left{
+        margin-bottom: 0;
+    }
+
+    .cont-right{
+        padding-left: 50px;
+        padding-top: 39px;
+        padding-right: 15px;
+        text-align: left;
+
+        h1{
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        p{
+            font-size: 1.125rem;
+        }
+    }
+
+    .register--btn{
+        margin-left: 0;
+        font-size: 1.25rem;
+        padding: 13px;
+    }
+
+    .social-icons{
+        margin-top: 15px;
+
+        ul{
+            justify-content: flex-end;
+            gap: 16px;
+        }
+
+        li{
+            span{
+                width: 40px;
+                height: 40px;
+                padding-top: 10px;
+            }
+        }
+    }
+}
